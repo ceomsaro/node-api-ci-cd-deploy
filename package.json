@@ -16,5 +16,23 @@
   "devDependencies": {
     "jest": "^30.2.0",
     "supertest": "^7.1.4"
+  },
+ "jest": {
+  "testEnvironment": "node",
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.js",
+    "!src/server.js"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "lines": 60,
+      "functions": 60,
+      "branches": 50,
+      "statements": 60
+    }
   }
+}
+
+
 }
